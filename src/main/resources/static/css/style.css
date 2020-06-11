@@ -1,0 +1,23 @@
+/* Colors */
+:root {
+  --rich-black-fogra-39: hsla(285, 31%, 5%, 1);
+  --ua-red: hsla(344, 88%, 88%, 1);
+  --fire-opal: hsla(7, 71%, 95%, 1);
+  --orange-yellow: hsla(44, 82%, 98%, 1);
+  --maximum-blue: hsla(192, 59%, 80%, 1);
+}
+* {
+    margin: 0;
+    padding: 0;
+    background-color: var(--maximum-blue);
+}
+h1 {
+  font-family: sans-serif;
+  background-color: var(--ua-red);
+}
+h2 {
+    background-color: var(--fire-opal);
+}
+h3 {
+    background-color: var(--orange-yellow);
+}
