@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Review</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/style.css"/>
+</head>
+<body>
+<h1 th:text="${review.title}">GAME TITLE</h1>
+<h2 th:text="${review.developer}">Developer</h2>
+<h2 th:text="${review.publisher}">Publisher</h2>
+<h2 th:text="${review.release-date}">Release Date: dd-MMM-yyyy</h2>
+<h2>User Tags: </h2>
+<ul th:each="user-tag :${review.user-tags}">
+    <li> <a th:text="'#' + ${user-tag.tag}">#TAG</a> </li>
+</ul>
+<p th:text="${review.description}">Brief description of game</p>
+<ul th:each="review :${user-reviews}">
+    <li th:text="${review}">review object</li>
+</ul>
+<script src="" async defer></script>
+</body>
+<footer><a href="../index.html">Home</a></footer>
+</html>
